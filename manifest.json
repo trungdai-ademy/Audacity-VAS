@@ -1,0 +1,32 @@
+{
+    "_note":  "Gói phần mềm VAS phát hành từ repo này — sinh tự động từ setup/tools-manifest.json của VAS (tools/vas-repos/make-repos.ps1). Không sửa tay.",
+    "packages":  [
+                     {
+                         "id":  "audacity",
+                         "vasRepo":  "Audacity-VAS",
+                         "boCai":  "setup",
+                         "title":  "Audacity (âm thanh)",
+                         "version":  "3.7.9",
+                         "file":  "audacity-win-3.7.9-64bit.zip",
+                         "url":  "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-win-3.7.9-64bit.zip",
+                         "sha256":  "6ACE99628C02AE345690183950BF76EE7AEACDAA1A3693E98A6F971642CD2DA7",
+                         "license":  "GPL-3.0 (nhiều tệp nguồn GPL-2.0-or-later; tài liệu CC-BY 3.0)",
+                         "home":  "https://www.audacityteam.org",
+                         "sourceCode":  "https://github.com/audacity/audacity/releases/tag/Audacity-3.7.9",
+                         "sources":  [
+                                         "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/audacity/audacity/Audacity-3.7.9/LICENSE.txt"
+                                          ],
+                         "sourceGaps":  "Gói kèm wxWidgets, libsndfile, LAME, mpg123, FLAC, Opus, Vorbis, SQLite, libcurl: mã nguồn theo audacity-sources-3.7.9 (thư mục lib-src / conan).",
+                         "note":  "Giữ dòng 3.x: Audacity 4.0 chưa có mod-script-pipe (AI điều khiển Audacity qua cổng này) — chỉ lên 4.x khi 4.x có lại scripting.",
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "audacity/audacity",
+                                        "asset":  "^audacity-win-(3\\.[0-9.]+)-64bit\\.zip$",
+                                        "allReleases":  true
+                                    }
+                     }
+                 ]
+}

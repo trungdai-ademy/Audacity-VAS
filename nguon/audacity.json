@@ -1,0 +1,313 @@
+{
+ "id": "audacity",
+ "version": "3.7.9",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "Audacity",
+   "version": "3.7.9 (tag Audacity-3.7.9 = 86d74c770974b25188ca2f23bcce47c1181bd08a)",
+   "license": "GPL-2.0-or-later (parts GPL-3.0-or-later; see LICENSE.txt)",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 67634190,
+   "evidence": "Audacity.exe FileVersion 3.7.9.0; official release source asset of the same release as audacity-win-3.7.9-64bit.zip (zip size 28591034 matches release asset)"
+  },
+  {
+   "name": "SQLite (lib-src/sqlite -> sqlite.dll)",
+   "version": "3.35.5",
+   "license": "Public domain",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/sqlite/sqlite3.h SQLITE_VERSION 3.35.5 at tag; sqlite.dll contains source id '2021-04-19 18:32:05 1b256d97b553a9611efc'; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "LV2 stack (lv2 1.16.0, lilv 0.24.6, serd 0.30.2, sord 0.16.4, sratom 0.6.4, suil 0.10.6) -> lib-lv2.dll",
+   "version": "see name",
+   "license": "ISC",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/lv2/*/wscript versions at tag; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "libsoxr",
+   "version": "0.1.3",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/libsoxr/CMakeLists.txt PROJECT_VERSION 0.1.3; static; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "TwoLAME (mod-mp2)",
+   "version": "0.3.13",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/twolame/configure.ac AC_INIT 0.3.13; static; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "SoundTouch",
+   "version": "1.7.1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/soundtouch SoundTouch.h SOUNDTOUCH_VERSION 1.7.1; static; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "libsbsms",
+   "version": "2.2.0",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/libsbsms/configure.ac AC_INIT 2.2.0; static; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "Vamp plugin SDK",
+   "version": "2.5",
+   "license": "BSD-style (Vamp)",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/libvamp/configure.ac AC_INIT 2.5; static; contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "libnyquist / portsmf / libscorealign / pffft / portmixer / portburn",
+   "version": "in-tree copies at tag",
+   "license": "BSD/MIT-style (nyquist, portsmf, scorealign, pffft), MIT (portmixer)",
+   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-sources-3.7.9.tar.gz",
+   "bytes": 0,
+   "evidence": "lib-src/* at tag (see lib-src/audacity-patches.txt); contained in audacity-sources-3.7.9.tar.gz (lib-src/, in-tree, not a submodule); bytes counted on the Audacity entry"
+  },
+  {
+   "name": "wxWidgets (Audacity fork)",
+   "version": "3.1.3.9-audacity (source tag v3.1.3.1-audacity + recipe patches)",
+   "license": "wxWindows Library Licence 3.1 (LGPL-2.0-or-later with exception)",
+   "url": "https://github.com/audacity/wxWidgets/archive/v3.1.3.1-audacity.tar.gz",
+   "bytes": 20461483,
+   "evidence": "conan/conanfile.py at tag: wxwidgets/3.1.3.9-audacity@audacity/stable; recipes/wxwidgets/3.1.3/conandata.yml@a8934101aa1b38796d27c000ad4c703d4ba951a8 maps 3.1.3.9-audacity to this tarball (sha256 bc62edab...d0b1) + patches in recipe dir; wx*313u_*_vc_x64_custom.dll FileVersion '3.1.3 (Audacity)'"
+  },
+  {
+   "name": "zlib",
+   "version": "1.3.1",
+   "license": "Zlib",
+   "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+   "bytes": 1512791,
+   "evidence": "conanfile pin zlib/1.3.1; conandata sha256 9a93b2b7...; zlib1.dll FileVersion 1.3.1"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.50",
+   "license": "libpng-2.0",
+   "url": "https://download.sourceforge.net/libpng/libpng-1.6.50.tar.xz",
+   "bytes": 1060992,
+   "evidence": "conanfile pin libpng/1.6.50 (conandata url artifactory mirror, same size 1060992); libpng16.dll string 'libpng version 1.6.50'"
+  },
+  {
+   "name": "Expat",
+   "version": "2.5.0",
+   "license": "MIT",
+   "url": "https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.xz",
+   "bytes": 460560,
+   "evidence": "conanfile pin expat/2.5.0; libexpat.dll string 'expat_2.5.0'"
+  },
+  {
+   "name": "libjpeg-turbo",
+   "version": "2.1.5",
+   "license": "IJG AND BSD-3-Clause AND Zlib",
+   "url": "https://sourceforge.net/projects/libjpeg-turbo/files/2.1.5/libjpeg-turbo-2.1.5.tar.gz",
+   "bytes": 2264471,
+   "evidence": "conanfile pin libjpeg-turbo/2.1.5; jpeg8.dll/turbojpeg.dll ProductVersion 2.1.5"
+  },
+  {
+   "name": "LAME (libmp3lame)",
+   "version": "3.100",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz",
+   "bytes": 1524133,
+   "evidence": "conanfile pin libmp3lame/3.100 (+recipe patches 6410/6416); libmp3lame.dll string '3.100'"
+  },
+  {
+   "name": "mpg123 (mpg123.dll, out123.dll, syn123.dll)",
+   "version": "1.31.2",
+   "license": "LGPL-2.1-only",
+   "url": "https://www.mpg123.de/download/mpg123-1.31.2.tar.bz2",
+   "bytes": 1093881,
+   "evidence": "conanfile pin mpg123/1.31.2 (network=False); conandata sha256 b17f2290..."
+  },
+  {
+   "name": "libid3tag (static)",
+   "version": "0.15.2b (Audacity fork tag)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/audacity/libid3tag/archive/refs/tags/0.15.2b.tar.gz",
+   "bytes": 384865,
+   "evidence": "conanfile pin libid3tag/0.15.2b shared=False (linked statically into Audacity modules)"
+  },
+  {
+   "name": "WavPack",
+   "version": "5.7.0",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/dbry/WavPack/archive/refs/tags/5.7.0.tar.gz",
+   "bytes": 2015172,
+   "evidence": "conanfile pin wavpack/5.7.0; wavpackdll.dll FileVersion 5,7,0,0"
+  },
+  {
+   "name": "libogg",
+   "version": "1.3.5",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/ogg/archive/refs/tags/v1.3.5.tar.gz",
+   "bytes": 251765,
+   "evidence": "conanfile pin ogg/1.3.5; conandata url"
+  },
+  {
+   "name": "FLAC (FLAC.dll, FLAC++.dll)",
+   "version": "1.4.2",
+   "license": "BSD-3-Clause (libFLAC) / GPL-2.0 tools not shipped",
+   "url": "https://github.com/xiph/flac/releases/download/1.4.2/flac-1.4.2.tar.xz",
+   "bytes": 1013700,
+   "evidence": "conanfile pin flac/1.4.2; FLAC.dll string 'reference libFLAC 1.4.2'"
+  },
+  {
+   "name": "Opus",
+   "version": "1.5.2",
+   "license": "BSD-3-Clause",
+   "url": "https://gitlab.xiph.org/xiph/opus/-/archive/v1.5.2/opus-v1.5.2.tar.gz",
+   "bytes": 4183402,
+   "evidence": "conanfile pin opus/1.5.2; opus.dll string 'libopus 1.5.2'"
+  },
+  {
+   "name": "opusfile (static)",
+   "version": "0.12",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/opusfile/archive/v0.12.tar.gz",
+   "bytes": 145424,
+   "evidence": "conanfile pin opusfile/0.12 shared=False http=False (+recipe patches)"
+  },
+  {
+   "name": "libvorbis (vorbis/vorbisenc/vorbisfile.dll)",
+   "version": "1.3.7",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/vorbis/archive/v1.3.7.tar.gz",
+   "bytes": 1234573,
+   "evidence": "conanfile pin vorbis/1.3.7; vorbis.dll string 'Xiph.Org libVorbis I 20200704' (=1.3.7)"
+  },
+  {
+   "name": "libsndfile",
+   "version": "1.0.31",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/libsndfile/libsndfile/releases/download/1.0.31/libsndfile-1.0.31.tar.bz2",
+   "bytes": 875335,
+   "evidence": "conanfile pin libsndfile/1.0.31; sndfile.dll FileVersion 1.0.31.0"
+  },
+  {
+   "name": "VST3 SDK (static in lib-vst3.dll)",
+   "version": "3.7.7 build 19",
+   "license": "GPL-3.0-only OR Steinberg VST3 License",
+   "url": "https://download.steinberg.net/sdk_downloads/vst-sdk_3.7.7_build-19_2022-12-12.zip",
+   "bytes": 97748141,
+   "evidence": "conanfile pin vst3sdk/3.7.7 (+recipe patches disable-validator, moduleinfoparser, moduleinfo.h); HEAD only (>20MB)"
+  },
+  {
+   "name": "PortAudio (portaudio_x64.dll)",
+   "version": "19.7.0 (+Audacity patches wasapi-loopback, pawinmme-export, winds-getguid, enable-oss)",
+   "license": "MIT",
+   "url": "https://github.com/PortAudio/portaudio/archive/refs/tags/v19.7.0.tar.gz",
+   "bytes": 1462961,
+   "evidence": "conanfile PortAudioDependency 19.7.0, use_asio default True; portaudio_x64.dll string 'PortAudio V19.7.0-devel'"
+  },
+  {
+   "name": "Steinberg ASIO SDK (compiled into portaudio_x64.dll)",
+   "version": "2.3.4 (2025-10-15)",
+   "license": "GPL-3.0-only (dual-licensed with Steinberg ASIO License)",
+   "url": "https://raw.githubusercontent.com/musescore/muse_deps/c9a299e19df04e40435d1c4649548c69ce152bd8/asiosdk/ASIO-SDK_2.3.4_2025-10-15/ASIO-SDK_2.3.4_2025-10-15.zip",
+   "bytes": 8910208,
+   "evidence": "recipes/portaudio/all/conanfile.py@a8934101aa1b38796d27c000ad4c703d4ba951a8 fetches ASIO-SDK_2.3.4_2025-10-15.zip sha256 d5ebf0c2...2eca when with_asio; recipe URL (muse_deps/main) is now 404, this commit-pinned copy downloaded and sha256-verified identical; portaudio_x64.dll contains ASIO host strings"
+  },
+  {
+   "name": "PortMidi (portmidi.dll, portmidi_s.dll)",
+   "version": "r234 (+recipe patches)",
+   "license": "MIT-style (PortMusic)",
+   "url": "https://artifactory.audacityteam.org/artifactory/mirror/portmidi/r234/portmedia-code-r234.zip",
+   "bytes": 1342298,
+   "evidence": "conanfile pin portmidi/r234; conandata sha256 d737d3f1... (only Audacity artifactory mirrors this snapshot)"
+  },
+  {
+   "name": "ThreadPool (header-only)",
+   "version": "20140926 (commit 9a42ec13)",
+   "license": "Zlib",
+   "url": "https://github.com/progschj/ThreadPool/archive/9a42ec1329f259a5f4881a291db1dcb8f2ad9040.tar.gz",
+   "bytes": 2069,
+   "evidence": "conanfile pin threadpool/20140926"
+  },
+  {
+   "name": "libcurl",
+   "version": "8.17.0 (Schannel TLS)",
+   "license": "curl",
+   "url": "https://curl.se/download/curl-8.17.0.tar.xz",
+   "bytes": 2797000,
+   "evidence": "conanfile CurlDependency 8.17.0 with_ssl=schannel; libcurl.dll FileVersion 8.17.0"
+  },
+  {
+   "name": "RapidJSON (header-only)",
+   "version": "1.1.0",
+   "license": "MIT",
+   "url": "https://github.com/Tencent/rapidjson/archive/v1.1.0.tar.gz",
+   "bytes": 1019402,
+   "evidence": "conanfile pin rapidjson/1.1.0"
+  },
+  {
+   "name": "Crashpad (crashpad_handler.exe + client)",
+   "version": "cci.20220219-audacity (commit e9937cb36cd1, +11 recipe patches)",
+   "license": "Apache-2.0",
+   "url": "https://github.com/chromium/crashpad/archive/e9937cb36cd12f24d73a07c4b91168cf1885b5db.tar.gz",
+   "bytes": 1469619,
+   "evidence": "conanfile CrashpadDependency cci.20220219-audacity; CMake crashreport engine default 'crashpad'; recipes/crashpad/cci.20220219-audacity/conandata.yml"
+  },
+  {
+   "name": "mini_chromium (crashpad dependency)",
+   "version": "commit 822fada4a997",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/chromium/mini_chromium/archive/822fada4a9972e3e2f36a981da770539025beb0a.tar.gz",
+   "bytes": 115495,
+   "evidence": "same conandata.yml (crashpad sources.mini_chromium)"
+  },
+  {
+   "name": "Microsoft Visual C++ runtime (msvcp140*, vcruntime140*, concrt140)",
+   "version": "14.44.35211.0",
+   "license": "Microsoft VC++ Redistributable licence (proprietary; no source)",
+   "url": "",
+   "bytes": 0,
+   "evidence": "DLL FileVersion 14.44.35211.0; redistributable, not open source"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "conan/conanfile.py @Audacity-3.7.9 (dependency pins)",
+   "url": "https://raw.githubusercontent.com/audacity/audacity/Audacity-3.7.9/conan/conanfile.py",
+   "bytes": 10530
+  },
+  {
+   "name": "conan/helpers/remotes.py @Audacity-3.7.9 (artifactory remotes)",
+   "url": "https://raw.githubusercontent.com/audacity/audacity/Audacity-3.7.9/conan/helpers/remotes.py",
+   "bytes": 1433
+  },
+  {
+   "name": ".github/workflows/build.yml @Audacity-3.7.9 (Windows MSVC 2022 x86_64 job)",
+   "url": "https://raw.githubusercontent.com/audacity/audacity/Audacity-3.7.9/.github/workflows/build.yml",
+   "bytes": 13576
+  },
+  {
+   "name": "audacity/conan-recipes @a8934101aa1b38796d27c000ad4c703d4ba951a8 (all recipes + patches; main HEAD, last push 2026-08-14 < 3.7.9 tag date 2026-09-01)",
+   "url": "https://github.com/audacity/conan-recipes/archive/a8934101aa1b38796d27c000ad4c703d4ba951a8.tar.gz",
+   "bytes": 787121
+  },
+  {
+   "name": "recipes/wxwidgets/3.1.3/conandata.yml",
+   "url": "https://raw.githubusercontent.com/audacity/conan-recipes/a8934101aa1b38796d27c000ad4c703d4ba951a8/recipes/wxwidgets/3.1.3/conandata.yml",
+   "bytes": 5531
+  },
+  {
+   "name": "recipes/portaudio/all/conanfile.py (ASIO SDK fetch)",
+   "url": "https://raw.githubusercontent.com/audacity/conan-recipes/a8934101aa1b38796d27c000ad4c703d4ba951a8/recipes/portaudio/all/conanfile.py",
+   "bytes": 6596
+  }
+ ],
+ "residualGaps": "Recipe commit chosen as conan-recipes main HEAD (last push 2026-08-14, before the 3.7.9 tag on 2026-09-01); the CI may also have consumed prebuilt binaries from audacity-binaries-conan2 built from an earlier recipe revision with identical version pins (no CI log available). Version resources/strings confirm zlib, libpng, expat, jpeg-turbo, lame, FLAC, opus, vorbis, sndfile, wavpack, curl, portaudio, wx; mpg123, ogg, opusfile, libid3tag, portmidi, threadpool, rapidjson, crashpad versions rest on the conanfile pins only. wxWidgets fork codeload archive (20.46 MB) was stream-counted (not stored) to get its size. libuuid/breakpad/catch2 are pinned in conanfile but not shipped on Windows (no DLL; crashpad engine is default). FFmpeg is not shipped (mod-ffmpeg loads a user-installed FFmpeg). Some recipe patches (portmidi, portaudio, lame, vst3sdk, wx) live only in the conan-recipes archive, which is listed as build recipe. GitHub codeload archives are generated on the fly; their bytes can differ in future regenerations."
+}
